@@ -1,0 +1,21 @@
+{
+    "name": "BootstrapersModule",
+    "rootNamespace": "Features.BootstrapersModule",
+    "references": [
+        "Zenject",
+        "SceneLoaderModule",
+        "GameFlowStateMachineModule",
+        "UniTask",
+        "UnityEngine.UI",
+        "GUID:4117684fa9ce05044a9b774bb0ce3ffd"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

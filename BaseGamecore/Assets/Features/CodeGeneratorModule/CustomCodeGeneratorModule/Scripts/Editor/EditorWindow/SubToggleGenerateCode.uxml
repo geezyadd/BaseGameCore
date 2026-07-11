@@ -1,0 +1,7 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/RSG/Muffin/CustomCodeGeneratorModule/Scripts/Editor/EditorWindow/CodeGenerationEditorStyles.uss?fileID=7433441132597879392&amp;guid=408d976e0b4d4c41a73d6ff23e09fc32&amp;type=3#CodeGenerationEditorStyles" />
+    <ui:VisualElement name="GenerateCode" class="sub-button-item">
+        <ui:Toggle name="toggle" />
+        <ui:Label tabindex="-1" text="Label" parse-escape-sequences="true" display-tooltip-when-elided="true" name="label" class="header" />
+    </ui:VisualElement>
+</ui:UXML>

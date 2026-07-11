@@ -1,0 +1,19 @@
+{
+    "name": "GameFlowStateMachineModule",
+    "rootNamespace": "Features.GameFlowStateMachineModule",
+    "references": [
+        "Zenject",
+        "SceneLoaderModule",
+        "UniTask",
+        "GUID:4117684fa9ce05044a9b774bb0ce3ffd"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

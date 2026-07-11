@@ -1,0 +1,20 @@
+{
+    "name": "SceneInBuiltGenerator",
+    "rootNamespace": "",
+    "references": [
+        "GUID:b7c4fe6cbf62bb14b9f8a36ebb2952a3"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "IncrementalSourceGenerator.dll"
+    ],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

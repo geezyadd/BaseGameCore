@@ -1,0 +1,23 @@
+{
+    "name": "GameFlowStateMachineModule.Tests",
+    "references": [
+        "GameFlowStateMachineModule",
+        "Zenject",
+        "Zenject-TestFramework",
+        "UniTask"
+    ],
+    "optionalUnityReferences": [
+        "TestAssemblies"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

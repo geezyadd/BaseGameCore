@@ -1,0 +1,35 @@
+---
+description: Правила GameCoreModule — Zenject-контексты, installers и структура сцен
+globs: Assets/Features/GameCoreModule/**
+alwaysApply: false
+---
+
+# GameCoreModule
+
+## Архитектура сцен
+
+- `ProjectContext.prefab` — в `GameResources/Resources`, installer `ProjectContextInstaller`.
+- `BootstrapScene` — entry SceneContext без installer, без contract/parent.
+- `GlobalScene` — contract `Global`, installer `GlobalSceneInstaller`.
+- `MenuScene` / `SessionScene` — parent contract `Global`, свои scene installers.
+- Сцены и скрипты модуля живут только в `Assets/Features/GameCoreModule`.
+
+## Installers
+
+- Installers — `MonoInstaller<T>` в `Scripts/Installers`.
+- App-wide биндинги — только в `ProjectContextInstaller`.
+- Shared scene-level биндинги — в `GlobalSceneInstaller`.
+- Scene-specific биндинги — только в `MenuSceneInstaller` / `SessionSceneInstaller`.
+- Не добавлять installer на `BootstrapScene`.
+- Не дублировать один и тот же биндинг между Project / Global / child-сценами.
+
+## Загрузка
+
+- Перед Menu/Session всегда должна быть загружена `GlobalScene`.
+- Переходы Menu ↔ Session — additive; Global не выгружать (`unloadRedundant: false`).
+
+## Код
+
+- Namespace: `GameCore` / `GameCore.Installers`.
+- Новый код модуля класть в `GameCoreModule/Scripts`, ресурсы — в `GameResources`.
+- Следовать стилю соседних feature-модулей: явные биндинги в `InstallBindings()`.
