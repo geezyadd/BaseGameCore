@@ -3,7 +3,7 @@ using Features.AssetLoaderModule.Scripts;
 using UnityEngine;
 using Zenject;
 
-namespace Features.MuffinZenject.Zenject.Addons.AddressablesConfigurationsLoader {
+namespace Features.Zenject.Zenject.Addons.AddressablesConfigurationsLoader {
     public static class AddressablesLoaderZenjectExtensions {
         public static ScopeConcreteIdArgConditionCopyNonLazyBinder BindConfigurationFromAddressables<T>(this DiContainer container, string addressableKey) where T : ScriptableObject {
             T configuration = container.Resolve<IAssetLoaderFacadeService>().LoadAsset<T>(addressableKey, AssetLoadSource.Addressables);

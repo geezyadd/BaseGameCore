@@ -4,7 +4,7 @@ using System.Linq;
 using System.Reflection;
 using Zenject;
 
-namespace Features.MuffinZenject.Zenject.Addons.GenericsExtensions {
+namespace Features.Zenject.Zenject.Addons.GenericsExtensions {
     public static class GenericExtensions {
         public static void BindAllSpecificImplementationsToInterface(this DiContainer container, Assembly targetAssembly, Type interfaceType) {
             foreach (Type type in targetAssembly.GetTypes())

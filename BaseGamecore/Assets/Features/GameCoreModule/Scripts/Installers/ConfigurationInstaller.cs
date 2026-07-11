@@ -1,6 +1,6 @@
 ﻿using Features.AddressablesConstantsGenerator.Generated;
-using Features.MuffinZenject.Zenject.Addons.AddressablesConfigurationsLoader;
 using Features.SceneLoaderModule.Scripts;
+using Features.Zenject.Zenject.Addons.AddressablesConfigurationsLoader;
 using Zenject;
 
 namespace GameCore.Installers {

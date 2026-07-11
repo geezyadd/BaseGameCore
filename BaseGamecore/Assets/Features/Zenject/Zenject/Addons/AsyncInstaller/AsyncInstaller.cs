@@ -2,7 +2,7 @@
 using Cysharp.Threading.Tasks;
 using Zenject;
 
-namespace Features.MuffinZenject.Zenject.Addons.AsyncInstaller {
+namespace Features.Zenject.Zenject.Addons.AsyncInstaller {
     public abstract class AsyncInstaller<TDerived> : InstallerBase where TDerived : AsyncInstaller<TDerived> {
         public static async UniTask Install(DiContainer container) =>
             await container.Instantiate<TDerived>().InstallBindingsAsync();
